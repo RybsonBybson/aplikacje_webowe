@@ -1,5 +1,5 @@
-const NAZWA_KATEGORII = { gory: 'Góry', morze: 'Morze', miasto: 'Miasto' }
-const KOLOR_KATEGORII = { gory: 'success', morze: 'primary', miasto: 'dark' }
+const NAZWA_KATEGORII = { gory: "Góry", morze: "Morze", miasto: "Miasto" };
+const KOLOR_KATEGORII = { gory: "success", morze: "primary", miasto: "dark" };
 
 function PhotoCard({ id, title, description, category, image, alt }) {
   return (
@@ -23,7 +23,7 @@ function PhotoCard({ id, title, description, category, image, alt }) {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default PhotoCard
+export default PhotoCard;

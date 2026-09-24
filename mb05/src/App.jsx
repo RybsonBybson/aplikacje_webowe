@@ -1,10 +1,9 @@
-import Navbar from './components/Navbar.jsx'
-import CategoryBar from './components/CategoryBar.jsx'
-import Gallery from './components/Gallery.jsx'
-import AddPhotoModal from './components/AddPhotoModal.jsx'
-import FiltersOffcanvas from './components/FiltersOffcanvas.jsx'
-import Footer from './components/Footer.jsx'
-import './App.css'
+import Navbar from "./components/Navbar.jsx";
+import CategoryBar from "./components/CategoryBar.jsx";
+import Gallery from "./components/Gallery.jsx";
+import AddPhotoModal from "./components/AddPhotoModal.jsx";
+import FiltersOffcanvas from "./components/FiltersOffcanvas.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -16,8 +15,9 @@ function App() {
           <div className="col-12 col-lg-8">
             <h1 className="mb-2">Galeria zdjęć</h1>
             <p className="lead text-body-secondary mb-0">
-              Zdjęcia z wypraw w góry, nad morze i po mieście. Wybierz kategorię,
-              żeby zawęzić widok — albo powiększ zdjęcie, które Ci się spodoba.
+              Zdjęcia z wypraw w góry, nad morze i po mieście. Wybierz
+              kategorię, żeby zawęzić widok — albo powiększ zdjęcie, które Ci
+              się spodoba.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ function App() {
       <AddPhotoModal />
       <FiltersOffcanvas />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

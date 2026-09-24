@@ -21,7 +21,11 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="menuGlowne">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#galeria">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="#galeria"
+              >
                 Galeria
               </a>
             </li>
@@ -39,7 +43,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

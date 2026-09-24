@@ -1,14 +1,15 @@
-// Osobna modalka na każde zdjęcie — id budujemy z propsa `id`, więc każda
-// karta trafia w swoje własne okno (`#zdjecie1`, `#zdjecie2`, ...).
-// Jedna wspólna modalka ze zmiennym zdjęciem to temat MB6 — tam, gdy
-// poznamy useState, przechowamy "wybrane zdjęcie" w stanie zamiast
-// renderować osiem modalek naraz.
 function PhotoModal({ id, title, description, imageLarge, alt }) {
-  const modalId = `zdjecie${id}`
-  const labelId = `${modalId}Label`
+  const modalId = `zdjecie${id}`;
+  const labelId = `${modalId}Label`;
 
   return (
-    <div className="modal fade" id={modalId} tabIndex="-1" aria-labelledby={labelId} aria-hidden="true">
+    <div
+      className="modal fade"
+      id={modalId}
+      tabIndex="-1"
+      aria-labelledby={labelId}
+      aria-hidden="true"
+    >
       <div className="modal-dialog modal-lg modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
@@ -27,14 +28,18 @@ function PhotoModal({ id, title, description, imageLarge, alt }) {
             <p className="mt-3 mb-0 text-body-secondary">{description}</p>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+            <button
+              type="button"
+              className="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
               Zamknij
             </button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default PhotoModal
+export default PhotoModal;

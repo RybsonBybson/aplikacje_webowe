@@ -19,22 +19,39 @@ function FiltersOffcanvas() {
       </div>
 
       <div className="offcanvas-body">
-        <p className="text-body-secondary">Zaznacz kategorie, które chcesz zobaczyć:</p>
+        <p className="text-body-secondary">
+          Zaznacz kategorie, które chcesz zobaczyć:
+        </p>
 
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" id="filtrGory" defaultChecked />
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="filtrGory"
+            defaultChecked
+          />
           <label className="form-check-label" htmlFor="filtrGory">
             Góry
           </label>
         </div>
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" id="filtrMorze" defaultChecked />
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="filtrMorze"
+            defaultChecked
+          />
           <label className="form-check-label" htmlFor="filtrMorze">
             Morze
           </label>
         </div>
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" id="filtrMiasto" defaultChecked />
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="filtrMiasto"
+            defaultChecked
+          />
           <label className="form-check-label" htmlFor="filtrMiasto">
             Miasto
           </label>
@@ -49,7 +66,7 @@ function FiltersOffcanvas() {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default FiltersOffcanvas
+export default FiltersOffcanvas;

@@ -1,9 +1,11 @@
-// Przyciski kategorii — na razie same wyglądają, nic nie robią po kliknięciu.
-// Logika filtrowania (useState) pojawi się dopiero w MB6/MB7.
 function CategoryBar() {
   return (
     <div id="kategorie" className="d-flex flex-wrap gap-2 mb-4">
-      <button type="button" className="btn btn-outline-primary active" aria-pressed="true">
+      <button
+        type="button"
+        className="btn btn-outline-primary active"
+        aria-pressed="true"
+      >
         Wszystkie
       </button>
       <button type="button" className="btn btn-outline-primary">
@@ -16,7 +18,7 @@ function CategoryBar() {
         Miasto
       </button>
     </div>
-  )
+  );
 }
 
-export default CategoryBar
+export default CategoryBar;
