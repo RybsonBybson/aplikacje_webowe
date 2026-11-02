@@ -6,7 +6,7 @@ function Footer() {
         <p className="mb-0 small">Zdjęcia pobierane z serwisu picsum.photos</p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

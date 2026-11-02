@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NAZWA_KATEGORII = { gory: "Góry", morze: "Morze", miasto: "Miasto" };
 const KOLOR_KATEGORII = { gory: "success", morze: "primary", miasto: "dark" };
 
@@ -23,9 +25,9 @@ function PhotoCard({ id, title, description, category, image, alt, favorite, onU
         </p>
         <p className="card-text text-body-secondary">{description}</p>
         <div className="d-flex gap-2 mt-auto">
-          <button type="button" className="btn btn-outline-primary flex-fill" data-bs-toggle="modal" data-bs-target={`#zdjecie${id}`}>
+          <Link className="btn btn-outline-primary flex-fill" to={`/zdjecie/${id}`}>
             Powiększ
-          </button>
+          </Link>
           <button type="button" className="btn btn-outline-danger" onClick={onUsun}>
             Usuń
           </button>
